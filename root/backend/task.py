@@ -2,7 +2,7 @@
 import uuid
 
 ### TODO
-# - Add task return types (like the task expects a value to be input or a image)
+# - Add task return types (like the task expects a value to be completed)
 
 # Class that represents a user task (Can be global or in a shift)
 class Task:
