@@ -21,7 +21,7 @@ def get_shift(id: str):
 
 # Update a shifts details
 @app.route("/shift/<id>", methods=['POST'])
-def get_shift(id: str):
+def edit_shift(id: str):
 
     # Get the new shifts details
     details = request.get_json()
