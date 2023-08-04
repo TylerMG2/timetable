@@ -19,3 +19,12 @@ def get_shift(id: str):
     # Return the shift
     return "Here is the shift with the id: " + id
 
+# Update a shifts details
+@app.route("/shift/<id>", methods=['POST'])
+def get_shift(id: str):
+
+    # Get the new shifts details
+    details = request.get_json()
+
+    # Return the shift
+    return "Here is the shift with the id: " + id

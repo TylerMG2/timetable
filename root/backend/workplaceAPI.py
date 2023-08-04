@@ -1,6 +1,19 @@
+from flask import request
 from backend import app
 
-# setting up a basic workplace, "Dont know if this is exactly what you wanted @TylerMG2"
+# Add a workplace
+@app.route("/workplaces", methods=['POST'])
+def get_workplace():
+    details = request.get_json()
+    return "Editing the workplace with the id: " + id
+
+# Get a workplace by id
 @app.route("/workplace/<id>")
 def get_workplace(id: str):
     return "Here is a workplace with the id: " + id
+
+# Edit a workplace by id
+@app.route("/workplace/<id>", methods=['POST'])
+def get_workplace(id: str):
+    details = request.get_json()
+    return "Editing the workplace with the id: " + id

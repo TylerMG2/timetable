@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 # Import views
 import backend.shiftAPI
+import backend.workplaceAPI
 
 # Main index
 @app.route("/")
